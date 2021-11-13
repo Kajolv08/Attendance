@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF323A7F"
+    android:weightSum="2"
+    android:orientation="vertical"
+    tools:context=".AddStudent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:weightSum="2"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+       <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1.3                                                  "
+            android:layout_height="match_parent">
+            &lt;!&ndash;<de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/shahid"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"/>
+       &ndash;&gt; </LinearLayout>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="0.7"
+            android:weightSum="7"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/roll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="Roll_no"
+                android:inputType="number"
+                android:textColor="#fff"
+                android:textColorHint="#fff"
+                android:textSize="15sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="NAME"
+                android:autofillHints="#fff"
+                android:textColorHint="#fff"
+                android:textColor="#fff"
+                android:id="@+id/name"
+                android:inputType="text"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="STD"
+                android:textColorHint="#fff"
+                android:id="@+id/std"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:inputType="text"
+                android:id="@+id/address"
+                android:textColorHint="#fff"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:hint="ADDRESS"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/phone"
+                android:textColorHint="#fff"
+                android:inputType="phone"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:hint="PHONE "/>
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="Email_Id"
+                android:id="@+id/email"
+                android:autofillHints="#fff"
+                android:textColorHint="#fff"
+                android:textColor="#fff"
+                android:inputType="textEmailAddress"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:text="Save"
+                android:theme="@style/CalenderViewCustom"
+                android:layout_weight="1"
+                android:id="@+id/btn1"
+                android:textColor="#FF323A7F"
+                android:textSize="18sp"
+                android:background="@drawable/button2"
+                android:layout_height="match_parent"
+                />
+
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/rvlist"
+            android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+</LinearLayout>

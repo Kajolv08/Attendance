@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:weightSum="3"
+    android:background="#FF323A7F"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Attendance">
+    <CalendarView
+        android:layout_marginTop="50dp"
+        android:id="@+id/calendarView"
+        android:layout_weight="0.7"
+        android:theme="@style/CalenderViewCustom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview"
+        android:textAlignment="center"
+        android:text="Your selection is:"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:paddingStart="30dp">
+
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="3"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1.2">
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/radioGroup"
+            android:layout_height="match_parent">
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Present"
+                android:textSize="20sp"
+                android:buttonTint="#fff"
+                android:id="@+id/RB1"
+                android:textColor="#fff"
+                android:layout_weight="1"
+                tools:ignore="OnClick" />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Absent"
+                android:textSize="18sp"
+                android:buttonTint="#fff"
+                android:id="@+id/RB2"
+                android:textColor="#fff"
+                android:layout_weight="1"
+                tools:ignore="OnClick" />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:text="Weak Off"
+                android:textSize="18sp"
+                android:id="@+id/RB3"
+                android:buttonTint="#fff"
+                android:textColor="#fff"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                tools:ignore="OnClick" />
+        </RadioGroup>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="SAVE"
+            android:layout_margin="10dp"
+            android:textColor="#FF323A7F"
+            android:theme="@style/CalenderViewCustom"
+            android:textSize="18sp"
+            android:id="@+id/button"
+            android:background="@drawable/button2"
+            android:baselineAligned="false" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
